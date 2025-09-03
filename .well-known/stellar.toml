@@ -1,0 +1,14 @@
+VERSION = "2.0.0"
+
+[DOCUMENTATION]
+ORG_NAME = "Macrohard"
+ORG_URL = "https://macrohard-cmd.github.io/macrohard/"
+ORG_LOGO = "https://macrohard-cmd.github.io/macrohard/logo.png"
+ORG_DESCRIPTION = "Macrohard Token on Stellar Network"
+
+[[CURRENCIES]]
+code = "MACROHARD"
+issuer = "GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO"
+name = "Macrohard Token"
+desc = "The official Macrohard Token on Stellar Network"
+image = "https://macrohard-cmd.github.io/macrohard/logo.png"
