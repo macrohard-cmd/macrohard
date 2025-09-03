@@ -1,0 +1,4 @@
+macrohard/                ← nama repository
+ ├── logo.png              ← logo token Macrohard
+ └── .well-known/          
+      └── stellar.toml     ← metadata token
