@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macrohard Token</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #f0f6fc;
+      text-align: center;
+      padding: 50px;
+    }
+    .card {
+      background: #161b22;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    a {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 10px 20px;
+      background: #1f6feb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+    a:hover {
+      background: #388bfd;
+    }
+    .buy {
+      background: #16a34a;
+    }
+    .buy:hover {
+      background: #22c55e;
+    }
+    .trust {
+      background: #9333ea;
+    }
+    .trust:hover {
+      background: #a855f7;
+    }
+    .qr {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://macrohard-cmd.github.io/macrohard/logo.png" alt="Macrohard Logo">
+    <h1>Macrohard Token</h1>
+    <p>The official token on Stellar Network</p>
+    <p><strong>Issuer:</strong><br>
+    GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO</p>
+    
+    <a href=".well-known/stellar.toml" target="_blank">View stellar.toml</a>
+    <a class="buy" href="https://lobstr.co/swap/native/Macrohard:GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO" target="_blank">
+      Buy on Lobstr
+    </a>
+    <a class="trust" href="web+stellar:asset?asset_code=MACROHARD&issuer=GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO" target="_blank">
+      Add Trustline
+    </a>
+
+    <div class="qr">
+      <p>📱 Scan to Add Trustline</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=web+stellar:asset?asset_code=MACROHARD&issuer=GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO" alt="QR Code Trustline">
+    </div>
+  </div>
+</body>
+</html>
