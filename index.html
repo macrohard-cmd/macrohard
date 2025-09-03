@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Macrohard Token - Add Trustline</title>
+  <title>Macrohard Token - Stellar Network</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 
@@ -19,7 +19,7 @@
       justify-content: center;
       align-items: center;
       padding: 20px;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     h1 {
@@ -29,10 +29,14 @@
     }
 
     p {
-      max-width: 480px;
+      max-width: 520px;
       margin: 0 auto 25px;
       font-size: 1.1em;
       color: #cbd5e1;
+    }
+
+    .section {
+      margin: 30px 0;
     }
 
     .btn {
@@ -55,7 +59,7 @@
     }
 
     .qr-frame {
-      margin-top: 30px;
+      margin-top: 15px;
       padding: 14px;
       border-radius: 20px;
       background: rgba(255,255,255,0.05);
@@ -64,10 +68,16 @@
     }
 
     img.qr {
-      max-width: 280px;
+      max-width: 260px;
       border-radius: 12px;
       background: #fff;
       padding: 10px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #22d3ee;
+      text-shadow: 0 0 8px #22d3ee;
     }
 
     .glow {
@@ -100,19 +110,36 @@
   <div class="glow2"></div>
 
   <h1>Macrohard Token</h1>
-  <p>Click the button below or scan the QR code to <br>add trustline in your Lobstr Wallet.</p>
+  <p>The official token on the Stellar Network. <br>
+     Manage your assets easily with Lobstr Wallet.</p>
 
-  <!-- Tombol langsung buka Lobstr -->
-  <a class="btn"
-     href="web+stellar:tx?xdr=AAAAAgAAAABFydFmKWIvBaZfxJFqEQ7BnqMR1kKDKFqzCyoDhqUebgAAJxAAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEaI6MAAAAAAAAAAAEAAAAAAAAABgAAAAJNYWNyb2hhcmQAAAAAAAAA%2F7kA4sBhsVh%2F9RiTjeulFIuRd7PXmrVstocMpgvDrP5%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwAAAAAAAAAA&replace=sourceAccount%3AX%2CseqNum%3AY%3BX%3Aaccount%20to%20which%20add%20the%20trustline%2CY%3Asequence%20number%20of%20your%20account">
-     ➕ Add Trustline (Open in Lobstr)
-  </a>
+  <!-- 🔹 Section Trustline -->
+  <div class="section">
+    <h2>➕ Add Trustline</h2>
+    <a class="btn"
+       href="web+stellar:tx?xdr=AAAAAgAAAABFydFmKWIvBaZfxJFqEQ7BnqMR1kKDKFqzCyoDhqUebgAAJxAAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEaI6MAAAAAAAAAAAEAAAAAAAAABgAAAAJNYWNyb2hhcmQAAAAAAAAA%2F7kA4sBhsVh%2F9RiTjeulFIuRd7PXmrVstocMpgvDrP5%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwAAAAAAAAAA&replace=sourceAccount%3AX%2CseqNum%3AY%3BX%3Aaccount%20to%20which%20add%20the%20trustline%2CY%3Asequence%20number%20of%20your%20account">
+       Open in Lobstr
+    </a>
+    <div class="qr-frame">
+      <img class="qr"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=web%2Bstellar%3Atx%3Fxdr%3DAAAAAgAAAABFydFmKWIvBaZfxJFqEQ7BnqMR1kKDKFqzCyoDhqUebgAAJxAAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEaI6MAAAAAAAAAAAEAAAAAAAAABgAAAAJNYWNyb2hhcmQAAAAAAAAA%252F7kA4sBhsVh%252F9RiTjeulFIuRd7PXmrVstocMpgvDrP5%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FwAAAAAAAAAA%26replace%3DsourceAccount%253AX%252CseqNum%253AY%253BX%253Aaccount%2520to%2520which%2520add%2520the%2520trustline%252CY%253Asequence%2520number%2520of%2520your%2520account"
+        alt="Add Trustline QR" />
+    </div>
+  </div>
 
-  <!-- QR Code -->
-  <div class="qr-frame">
-    <img class="qr"
-      src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=web%2Bstellar%3Atx%3Fxdr%3DAAAAAgAAAABFydFmKWIvBaZfxJFqEQ7BnqMR1kKDKFqzCyoDhqUebgAAJxAAAAAAAAAAAQAAAAEAAAAAAAAAAQAAAAEaI6MAAAAAAAAAAAEAAAAAAAAABgAAAAJNYWNyb2hhcmQAAAAAAAAA%252F7kA4sBhsVh%252F9RiTjeulFIuRd7PXmrVstocMpgvDrP5%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FwAAAAAAAAAA%26replace%3DsourceAccount%253AX%252CseqNum%253AY%253BX%253Aaccount%2520to%2520which%2520add%2520the%2520trustline%252CY%253Asequence%2520number%2520of%2520your%2520account"
-      alt="Add Trustline QR" />
+  <!-- 🔹 Section Buy -->
+  <div class="section">
+    <h2>💸 Buy Macrohard</h2>
+    <a class="btn"
+       href="https://lobstr.co/swap/native/Macrohard:GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO"
+       target="_blank">
+       Buy on Lobstr
+    </a>
+    <div class="qr-frame">
+      <img class="qr"
+        src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://lobstr.co/swap/native/Macrohard:GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO"
+        alt="Buy on Lobstr QR" />
+    </div>
   </div>
 
 </body>
