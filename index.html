@@ -10,24 +10,24 @@
       background: #0d1117;
       color: #f0f6fc;
       text-align: center;
-      padding: 50px;
+      padding: 40px;
     }
     .card {
       background: #161b22;
       padding: 30px;
       border-radius: 15px;
-      max-width: 500px;
+      max-width: 600px;
       margin: auto;
       box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
-    img {
-      max-width: 200px;
+    img.logo {
+      max-width: 160px;
       margin-bottom: 20px;
     }
     a {
       display: inline-block;
-      margin: 10px 5px;
-      padding: 10px 20px;
+      margin: 8px;
+      padding: 12px 24px;
       background: #1f6feb;
       color: #fff;
       text-decoration: none;
@@ -49,19 +49,28 @@
     .trust:hover {
       background: #a855f7;
     }
-    .qr {
-      margin-top: 20px;
+    .qr-section {
+      margin-top: 25px;
+    }
+    .qr-block {
+      margin: 20px 0;
+    }
+    .qr-block img {
+      max-width: 220px;
+      border: 4px solid #30363d;
+      border-radius: 12px;
+      background: #fff;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="https://macrohard-cmd.github.io/macrohard/logo.png" alt="Macrohard Logo">
+    <img class="logo" src="https://macrohard-cmd.github.io/macrohard/logo.png" alt="Macrohard Logo">
     <h1>Macrohard Token</h1>
     <p>The official token on Stellar Network</p>
     <p><strong>Issuer:</strong><br>
     GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO</p>
-    
+
     <a href=".well-known/stellar.toml" target="_blank">View stellar.toml</a>
     <a class="buy" href="https://lobstr.co/swap/native/Macrohard:GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO" target="_blank">
       Buy on Lobstr
@@ -70,9 +79,15 @@
       Add Trustline
     </a>
 
-    <div class="qr">
-      <p>📱 Scan to Add Trustline on Lobstr</p>
-      <img src="https://macrohard-cmd.github.io/macrohard/trustline-qr.png" alt="Macrohard Trustline QR">
+    <div class="qr-section">
+      <div class="qr-block">
+        <h3>📱 Add Trustline</h3>
+        <img src="https://macrohard-cmd.github.io/macrohard/trustline-qr.png" alt="Trustline QR">
+      </div>
+      <div class="qr-block">
+        <h3>💸 Buy on Lobstr</h3>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://lobstr.co/swap/native/Macrohard:GD73SAHCYBQ3CWD76UMJHDPLUUKIXELXWPLZVNLMW2DQZJQLYOWP45TO" alt="Buy QR">
+      </div>
     </div>
   </div>
 </body>
